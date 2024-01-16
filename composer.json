@@ -1,0 +1,39 @@
+{
+  "name": "sk/laravel-rbac",
+  "description": "A role base access control",
+  "license": "MIT",
+  "keywords": [
+    "sk-rbac",
+    "role-base-access-control",
+    "role base access control",
+    "role manager",
+    "premission manager"
+  ],
+  "authors": [
+    {
+      "name": "Shree Krishna Acharya",
+      "email": "sksharma72000@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sk\\LaravelRbac\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sk\\LaravelRbac\\SkRbacServiceProvider"
+      ],
+      "aliases": {}
+    }
+  }
+}
