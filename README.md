@@ -40,7 +40,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 
 1. Update `skrbac.php`
 
-   Open file skrbac.php inside config folder change the configuration as per your need.
+   Open file skrbac.php inside config folder change and the configuration as per your need.
 
    - **user_modal:**  Define your user model classname that you will use for authentication. example `'user_model'=>App\Models\User::class`
    - **groups:** Add all route group name that needs to be included for rbac. example all route group name starting with `admin.` will be added into rbac route list
@@ -51,9 +51,9 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
    ```bash
    return [
     'user_model' => App\Models\User::class,
-    'groups' => ['admin.'],
-    'routes' => ['user.post.list'],
-    'except_routes' => ['admin.logout','admin.dashboard']
+    'groups' => ['admin.'], //or ['admin.post.'] // can include starting name of route
+    'routes' => ['user.post.list'], // must include complete name of route
+    'except_routes' => ['admin.logout','admin.dashboard'] // must include complete name of route
     ];
 
 2. Visit url example 'http://localhost:8000/skrbac/home'
@@ -92,7 +92,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 
     Here 'admin.' is the group name.
 
-6. When ever you make anu new changes to your route list. Always run following command.
+6. When ever you make any new changes to your route list. Always run following command.
 
     ```bash
    php artisan route:store
@@ -106,8 +106,20 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
     @if(SkAccess::hasAccess('demo.post.index'))
         <a href="{{route('demo.post.index')}}">Post</a>
     @endif
+    ```
 
 
+*Notes:* If you want to design you custom view for landing page of rbac. You can define you own route insted of `http://localhost:8000/skrbac/home` and have a div element with id route and load js file
+Example :
+Your custom blade file mycustomrbac.blade.php
+```bash
+@extends('layout/main')
+@section('content')
+<div id="root"></div>
+@push('footer_script')
+    <script defer="defer" type="module" src="/vendor/laravel-rbac/js/skrbac.js"></script>
+@endpush
+```
 Contributing:
 
 We welcome contributions! Please see Contribution Guidelines: https://github.com/shreekrishnaacharya/laravel-rbac/blob/main/CONTRIBUTING.md
