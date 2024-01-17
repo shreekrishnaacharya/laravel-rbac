@@ -99,7 +99,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
     ```
    This command will update rbac list.
 
-7. You can use `\Sk\LaravelRbac\SkAccess` class to check if given route accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else true
+7. You can use `\Sk\LaravelRbac\SkAccess` class to check if given route is accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else in other all case it return true
 
     Example :
     ```bash
