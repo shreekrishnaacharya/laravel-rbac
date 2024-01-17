@@ -4,5 +4,5 @@ return [
     'user_modal' => "App\\Models\\User",
     'groups' => ['admin.'],
     'routes' => [],
-    'except_routes' => ['admin.logout']
+    'except_routes' => []
 ];
