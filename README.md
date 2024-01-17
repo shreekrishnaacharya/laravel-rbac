@@ -109,7 +109,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
     ```
 
 
-*Notes:* If you want to design you custom view for landing page of rbac. You can define you own route insted of `http://localhost:8000/skrbac/home` and have a div element with id route and load js file
+*Notes:* If you want to design you custom view for landing page of rbac. You can define you own route insted of `http://localhost:8000/skrbac/home` and have a div element with id and load js file. ID of div element must be `root`
 Example :
 Your custom blade file mycustomrbac.blade.php
 ```bash
