@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use Sk\LaravelRbac\Models\RoleAccess;
 use Sk\LaravelRbac\Models\RoleUser;
 use Illuminate\Http\Request;
+use Sk\LaravelRbac\SkAccess;
+use Sk\LaravelRbac\SkRouteHolder;
 
 class RbacFilter
 {
@@ -18,7 +20,8 @@ class RbacFilter
         if (Auth::check()) {
             $user_id = Auth::id();
             $user_roles = RoleUser::where(["user_id" => $user_id])->pluck("role_id")->toArray();
-            if (RoleAccess::whereIn("role_id", $user_roles)->where(["access_id" => $routeName])->exists()) {
+            SkRouteHolder::$allowedRoutes = RoleAccess::whereIn("role_id", $user_roles)->where(["access_id" => $routeName])->pluck("access_id")->toArray();
+            if (!SkAccess::hasAccess($routeName)) {
                 throw new AuthorizationException('You are not authorized to view this resource.');
             }
         }
