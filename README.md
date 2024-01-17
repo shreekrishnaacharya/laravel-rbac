@@ -116,6 +116,7 @@ Your custom blade file mycustomrbac.blade.php
 @extends('layout/main')
 @section('content')
 <div id="root"></div>
+@endsection
 @push('footer_script')
     <script defer="defer" type="module" src="/vendor/laravel-rbac/js/skrbac.js"></script>
 @endpush
