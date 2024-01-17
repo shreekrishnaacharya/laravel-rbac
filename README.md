@@ -76,7 +76,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
             \Sk\LaravelRbac\Middlewares\RbacFilter::class
         ],
     ];
-
+    ```
 5. Route setup
 
    While setting your route follow the practice of grouping your route and giving name to your each route.
@@ -89,7 +89,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
             Route::put('post/{post}', [ExampleController::class, 'update'])->name("post.update");
             Route::delete('post/{post}', [ExampleController::class, 'delete'])->name("post.delete");
     });
-
+    ```
     Here 'admin.' is the group name.
 
 6. When ever you make any new changes to your route list. Always run following command.
