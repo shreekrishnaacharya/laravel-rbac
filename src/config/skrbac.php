@@ -1,6 +1,8 @@
 <?php
 
 return [
-    'table_name' => 'sk_routes',
-    'user_modal' => "App\\Models\\User"
+    'user_modal' => "App\\Models\\User",
+    'groups' => ['admin.'],
+    'routes' => [],
+    'except_routes' => ['admin.logout']
 ];

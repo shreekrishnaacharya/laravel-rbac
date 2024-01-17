@@ -20,7 +20,7 @@ class RbacFilter
         if (Auth::check()) {
             $user_id = Auth::id();
             $user_roles = RoleUser::where(["user_id" => $user_id])->pluck("role_id")->toArray();
-            SkRouteHolder::$allowedRoutes = RoleAccess::whereIn("role_id", $user_roles)->where(["access_id" => $routeName])->pluck("access_id")->toArray();
+            SkRouteHolder::$allowedRoutes = RoleAccess::whereIn("role_id", $user_roles)->pluck("access_id")->toArray();
             if (!SkAccess::hasAccess($routeName)) {
                 throw new AuthorizationException('You are not authorized to view this resource.');
             }
