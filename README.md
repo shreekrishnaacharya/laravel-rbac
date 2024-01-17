@@ -6,7 +6,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 
 **Features:**
 
-- **Effortless Route Listing:** Automatically lists all defined Laravel routes with your defined guards and stores them in a database table for easy management.
+- **Effortless Route Listing:** Automatically lists all defined Laravel routes and stores them in a database table for easy management.
 - **Seamless Role Creation:** Create custom roles with specific permissions to tailor access to different user groups.
 - **Granular Route Assignment:** Assign individual routes to roles, defining which users can access certain functionalities.
 - **Multi-Role User Assignment:** Assign multiple roles to users for flexible permission management.
@@ -41,5 +41,5 @@ Open-source licensed under the MIT license: https://opensource.org/licenses/MIT
 
 Credits:
 
-Developed by Shree Krishna Acharya: https://your-website-url
+Developed by Shree Krishna Acharya: https://www.linkedin.com/in/shree-krishna-acharya/
 Built on top of the amazing Laravel framework

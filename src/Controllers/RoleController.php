@@ -31,7 +31,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::get();
+        $roles = Role::with("users:id,name")->get();
         return response()->json(["message" => "success", "flag" => true, "data" => $roles]);
     }
 

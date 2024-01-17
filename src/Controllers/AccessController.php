@@ -25,8 +25,8 @@ class AccessController extends Controller
 
     public function withRole(Role $role)
     {
-        $roles = RoleAccess::where(["role_id" => $role->id])->get();
-        return response()->json(["message" => "success", "flag" => true, "data" => $roles]);
+        $access = RoleAccess::where(["role_id" => $role->id])->get();
+        return response()->json(["message" => "success", "flag" => true, "data" => $access, "role" => $role]);
     }
 
     /**
