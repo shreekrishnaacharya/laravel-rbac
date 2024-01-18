@@ -1,6 +1,6 @@
 <?php
 
-namespace Sk\LaravelRbac\Models;
+namespace Skacharya\LaravelRbac\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

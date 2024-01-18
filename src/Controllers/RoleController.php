@@ -1,10 +1,10 @@
 <?php
 
-namespace Sk\LaravelRbac\Controllers;
+namespace Skacharya\LaravelRbac\Controllers;
 
 use Illuminate\Http\Request;
-use Sk\LaravelRbac\Controllers\Controller;
-use Sk\LaravelRbac\Models\Role;
+use Skacharya\LaravelRbac\Controllers\Controller;
+use Skacharya\LaravelRbac\Models\Role;
 
 class RoleController extends Controller
 {

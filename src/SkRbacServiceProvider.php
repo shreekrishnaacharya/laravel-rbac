@@ -1,10 +1,10 @@
 <?php
 
-namespace Sk\LaravelRbac;
+namespace Skacharya\LaravelRbac;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Sk\LaravelRbac\Commands\StoreRoutesCommand;
+use Skacharya\LaravelRbac\Commands\StoreRoutesCommand;
 
 class SkRbacServiceProvider extends ServiceProvider
 {
@@ -31,7 +31,7 @@ class SkRbacServiceProvider extends ServiceProvider
         ], 'skrbac_view');
 
         Route::group(['middleware' => ['web']], function () {
-            \Sk\LaravelRbac\SkRbac::routes();
+            \Skacharya\LaravelRbac\SkRbac::routes();
         });
     }
 

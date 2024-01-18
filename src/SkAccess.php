@@ -1,6 +1,6 @@
 <?php
 
-namespace Sk\LaravelRbac;
+namespace Skacharya\LaravelRbac;
 
 class SkAccess
 {

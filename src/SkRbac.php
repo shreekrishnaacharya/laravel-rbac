@@ -1,13 +1,13 @@
 <?php
 
-namespace Sk\LaravelRbac;
+namespace Skacharya\LaravelRbac;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Sk\LaravelRbac\Controllers\AccessController;
-use Sk\LaravelRbac\Controllers\RoleController;
-use Sk\LaravelRbac\Middlewares\RbacFilter;
+use Skacharya\LaravelRbac\Controllers\AccessController;
+use Skacharya\LaravelRbac\Controllers\RoleController;
+use Skacharya\LaravelRbac\Middlewares\RbacFilter;
 
 class SkRbac
 {

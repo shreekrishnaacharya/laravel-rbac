@@ -1,13 +1,13 @@
 <?php
 
-namespace Sk\LaravelRbac\Controllers;
+namespace Skacharya\LaravelRbac\Controllers;
 
 use Illuminate\Http\Request;
-use Sk\LaravelRbac\Controllers\Controller;
-use Sk\LaravelRbac\Models\Access;
-use Sk\LaravelRbac\Models\RbacRoute;
-use Sk\LaravelRbac\Models\RoleAccess;
-use Sk\LaravelRbac\Models\Role;
+use Skacharya\LaravelRbac\Controllers\Controller;
+use Skacharya\LaravelRbac\Models\Access;
+use Skacharya\LaravelRbac\Models\RbacRoute;
+use Skacharya\LaravelRbac\Models\RoleAccess;
+use Skacharya\LaravelRbac\Models\Role;
 
 
 class AccessController extends Controller

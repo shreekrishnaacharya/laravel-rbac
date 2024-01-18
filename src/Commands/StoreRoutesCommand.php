@@ -1,6 +1,6 @@
 <?php
 
-namespace Sk\LaravelRbac\Commands;
+namespace Skacharya\LaravelRbac\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Route;

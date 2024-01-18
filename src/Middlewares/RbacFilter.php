@@ -1,15 +1,15 @@
 <?php
 
-namespace Sk\LaravelRbac\Middlewares;
+namespace Skacharya\LaravelRbac\Middlewares;
 
 use Closure;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Facades\Auth;
-use Sk\LaravelRbac\Models\RoleAccess;
-use Sk\LaravelRbac\Models\RoleUser;
+use Skacharya\LaravelRbac\Models\RoleAccess;
+use Skacharya\LaravelRbac\Models\RoleUser;
 use Illuminate\Http\Request;
-use Sk\LaravelRbac\SkAccess;
-use Sk\LaravelRbac\SkRouteHolder;
+use Skacharya\LaravelRbac\SkAccess;
+use Skacharya\LaravelRbac\SkRouteHolder;
 
 class RbacFilter
 {

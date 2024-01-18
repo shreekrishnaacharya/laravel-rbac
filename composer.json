@@ -1,5 +1,5 @@
 {
-  "name": "acharya/laravel-rbac",
+  "name": "Skacharya/laravel-rbac",
   "description": "A role base access control",
   "license": "MIT",
   "keywords": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Sk\\LaravelRbac\\": "src/"
+      "Skacharya\\LaravelRbac\\": "src/"
     }
   },
   "autoload-dev": {
@@ -31,7 +31,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Sk\\LaravelRbac\\SkRbacServiceProvider"
+        "Skacharya\\LaravelRbac\\SkRbacServiceProvider"
       ],
       "aliases": {}
     }

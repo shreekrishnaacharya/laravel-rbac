@@ -1,4 +1,4 @@
-# Sk\LaravelRbac
+# Skacharya\LaravelRbac
 
 **Description:**
 
@@ -23,7 +23,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 2. Publish configuration (if required):
 
     ```bash
-   php artisan vendor:publish --provider="Sk\LaravelRbac"
+   php artisan vendor:publish --provider="Skacharya\LaravelRbac"
 
 3. Run database migrations:
 
@@ -64,16 +64,16 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 3. Once role is created, you can click on key icon and view list of routes. By default all routes are allowed to access to all user. You can allow or denied
    each route by clicking switch buttons.
 
-4. Middleware `\Sk\LaravelRbac\Middlewares\RbacFilter::class`
+4. Middleware `\Skacharya\LaravelRbac\Middlewares\RbacFilter::class`
 
-   You can add middleware `\Sk\LaravelRbac\Middlewares\RbacFilter::class` to the middleware group. 
+   You can add middleware `\Skacharya\LaravelRbac\Middlewares\RbacFilter::class` to the middleware group. 
    
    Example you can open app\Http\Kernel.php 
    ```bash
        protected $middlewareGroups = [
         'web' => [
         //    ...other middleware
-            \Sk\LaravelRbac\Middlewares\RbacFilter::class
+            \Skacharya\LaravelRbac\Middlewares\RbacFilter::class
         ],
     ];
     ```
@@ -99,7 +99,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
     ```
    This command will update rbac list.
 
-7. You can use `\Sk\LaravelRbac\SkAccess` class to check if given route is accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else in other all case it return true
+7. You can use `\Skacharya\LaravelRbac\SkAccess` class to check if given route is accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else in other all case it return true
 
     Example :
     ```bash
