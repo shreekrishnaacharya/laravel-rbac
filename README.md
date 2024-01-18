@@ -23,7 +23,15 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 2. Publish configuration (if required):
 
     ```bash
-   php artisan vendor:publish --provider="Skacharya\LaravelRbac"
+   php artisan vendor:publish --provider="Skacharya\LaravelRbac\SkRbacServiceProvider"
+   //or for indivisual vendor dir
+   //eg for view
+   php artisan vendor:publish --tag="skrbac_view"
+   //for public
+   php artisan vendor:publish --tag="skrbac_public"
+   //for config
+   php artisan vendor:publish --tag="skrbac_config"
+   ```
 
 3. Run database migrations:
 
