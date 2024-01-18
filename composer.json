@@ -9,7 +9,7 @@
     "role manager",
     "premission manager"
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "authors": [
     {
       "name": "Shree Krishna Acharya",
