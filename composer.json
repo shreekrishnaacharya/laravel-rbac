@@ -1,5 +1,5 @@
 {
-  "name": "sk/laravel-rbac",
+  "name": "acharya/laravel-rbac",
   "description": "A role base access control",
   "license": "MIT",
   "keywords": [
