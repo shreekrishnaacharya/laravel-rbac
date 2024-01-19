@@ -10,6 +10,7 @@
     "premission manager"
   ],
   "minimum-stability": "stable",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Shree Krishna Acharya",
