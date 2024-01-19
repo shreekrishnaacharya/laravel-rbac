@@ -118,6 +118,11 @@ Your custom blade file mycustomrbac.blade.php
     <script defer="defer" type="module" src="/vendor/laravel-rbac/js/skrbac.js"></script>
 @endpush
 ```
+Github:
+Want to explor the code for free.
+We appricate your star and fork on github :
+https://github.com/shreekrishnaacharya/laravel-rbac
+
 Contributing:
 
 We welcome contributions! Please see Contribution Guidelines: https://github.com/shreekrishnaacharya/laravel-rbac/blob/main/CONTRIBUTING.md
