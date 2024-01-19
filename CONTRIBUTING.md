@@ -1,5 +1,5 @@
 ## Steps to contribute
-1. Fork [sk/laravel-rbac](https://github.com/shreekrishnaacharya/laravel-rbac) from GitHub.
+1. Fork [skacharya/laravel-rbac](https://github.com/shreekrishnaacharya/laravel-rbac) from GitHub.
 1. Run commands below:
 
     ```
@@ -8,6 +8,6 @@
     composer require skacharya/laravel-rbac:1.2.1
     make init
     ```
-1. Edit codes in `vendor/sk/laravel-rbac`
+1. Edit codes in `vendor/skacharya/laravel-rbac`
 1. Push your changes to your fork.
-1. Send a pull request to [sk/laravel-rbac](https://github.com/shreekrishnaacharya/laravel-rbac).
+1. Send a pull request to [skacharya/laravel-rbac](https://github.com/shreekrishnaacharya/laravel-rbac).
