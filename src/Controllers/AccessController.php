@@ -46,8 +46,8 @@ class AccessController extends Controller
                 'method' => $route->methods()[0] ?? null,
                 'name' => $route->getName(),
             ];
-        });
-        return response()->json(["message" => "success", "flag" => true, "data" => $routeList]);
+        })->toArray();
+        return response()->json(["message" => "success", "flag" => true, "data" => array_values($routeList)]);
     }
 
     public function withRole(Role $role)

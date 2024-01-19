@@ -11,7 +11,6 @@ class Role extends Model
 
     function users()
     {
-        return $this->belongsToMany(config('skrbac.user_model'), 'skrbac_role_users');
+        return $this->belongsToMany(config('skrbac.user_model'), 'skrbac_role_users', 'user_id', 'role_id');
     }
 }
-

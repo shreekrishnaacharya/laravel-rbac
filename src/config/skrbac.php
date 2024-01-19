@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'user_modal' => "App\\Models\\User",
+    'user_model' => "App\\Models\\User",
     'groups' => ['admin.'],
     'routes' => [],
     'except_routes' => []
