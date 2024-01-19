@@ -5,7 +5,7 @@
     ```
     git clone git@github.com:shreekrishnaacharya/laravel-rbac.git
     cd laravel-rbac
-    composer require sk/laravel-rbac:dev-master
+    composer require skacharya/laravel-rbac:1.2.1
     make init
     ```
 1. Edit codes in `vendor/sk/laravel-rbac`
