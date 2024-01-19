@@ -2,7 +2,7 @@
 
 **Description:**
 
-Empower your Laravel applications with dynamic, real-time, and user-friendly role-based access control (RBAC). Effortlessly manage user permissions by associating roles with specific routes, stored in a database for maximum flexibility and control.
+Empower your Laravel applications with dynamic, real-time, and user-friendly role-based access control (RBAC). Effortlessly manage user permissions by associating roles with specific routes, stored in a database for maximum flexibility and control. With this rbac will not only dynamically customize user premission but also customize application interface as runtime. You do not even need to write much code on backend as well as on frontend as all premission are check based on route and associated role assignrd to user which is managed at backend and the ant designed react interface provides you easyto use interface where you can create roles assign roles to user and define the premission for each route to role. You can even manage group of route you want to inforce rbac or hide the route which you do not want to include in rbac.
 
 **Features:**
 
@@ -11,7 +11,8 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 - **Granular Route Assignment:** Assign individual routes to roles, defining which users can access certain functionalities.
 - **Multi-Role User Assignment:** Assign multiple roles to users for flexible permission management.
 - **Dynamic Real-Time Authorization:** Enforces access control rules instantly, ensuring users only access authorized routes.
-- **User-Friendly Experience:** Streamlines RBAC implementation for a smooth developer experience.
+- **User-Friendly Experience:** Streamlines RBAC implementation with less code to write for a smooth developer experience.
+- **Customize the user interface bynamically:** Hide or show the navigation button 
 
 **Installation:**
 
