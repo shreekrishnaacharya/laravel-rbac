@@ -4,17 +4,17 @@ namespace Skacharya\LaravelRbac;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Skacharya\LaravelRbac\Commands\StoreRoutesCommand;
+// use Skacharya\LaravelRbac\Commands\StoreRoutesCommand;
 
 class SkRbacServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                StoreRoutesCommand::class,
-            ]);
-        }
+        // if ($this->app->runningInConsole()) {
+        //     $this->commands([
+        //         StoreRoutesCommand::class,
+        //     ]);
+        // }
         $this->loadViewsFrom(__DIR__ . '/views', 'laravel-rbac');
         $this->loadMigrationsFrom(__DIR__ . '/Migrations');
 

@@ -15,21 +15,6 @@ class StoreRoutesCommand extends Command
     public function handle()
     {
         DB::table("skrbac_routes")->delete();
-        // $providerModelClass = config("skrbac.user_model");
-        // $guards = config("skrbac.guards");
-        // $auth = config("auth");
-        // $routes = collect(Route::getRoutes())->filter(function ($route) use ($providerModelClass, $auth, $guards) {
-        //     $middleware = $route->middleware()[0];
-        //     if (!in_array($middleware, $guards)) {
-        //         return false;
-        //     }
-        //     if (isset($auth["guards"][$middleware])) {
-        //         if (isset($auth["providers"][$auth["guards"][$middleware]["provider"]])) {
-        //             return $auth["providers"][$auth["guards"][$middleware]["provider"]]["model"] === $providerModelClass;
-        //         }
-        //     }
-        //     return false;
-        // });
         $prefixs = config("skrbac.groups");
         $allowRouteList = config("skrbac.routes");
         $blockRouteList = config("skrbac.except_routes");

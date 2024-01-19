@@ -8,6 +8,7 @@ use Skacharya\LaravelRbac\Models\Access;
 use Skacharya\LaravelRbac\Models\RbacRoute;
 use Skacharya\LaravelRbac\Models\RoleAccess;
 use Skacharya\LaravelRbac\Models\Role;
+use Illuminate\Support\Facades\Route;
 
 
 class AccessController extends Controller
@@ -19,8 +20,34 @@ class AccessController extends Controller
      */
     public function index()
     {
-        $roles = RbacRoute::all();
-        return response()->json(["message" => "success", "flag" => true, "data" => $roles]);
+        $prefixs = config("skrbac.groups");
+        $allowRouteList = config("skrbac.routes");
+        $blockRouteList = config("skrbac.except_routes");
+        $routes = collect(Route::getRoutes())->filter(function ($route) use ($prefixs, $allowRouteList, $blockRouteList) {
+            $flag = false;
+            foreach ($prefixs as $px) {
+                if (strpos($route->getName(), $px) === 0) {
+                    $flag = true;
+                    break;
+                }
+            }
+            if (in_array($route->getName(), $allowRouteList)) {
+                $flag = true;
+            }
+            if (in_array($route->getName(), $blockRouteList)) {
+                $flag = false;
+            }
+            return $flag;
+        });
+
+        $routeList = $routes->map(function ($route) {
+            return [
+                'uri' => $route->uri(),
+                'method' => $route->methods()[0] ?? null,
+                'name' => $route->getName(),
+            ];
+        });
+        return response()->json(["message" => "success", "flag" => true, "data" => $routeList]);
     }
 
     public function withRole(Role $role)
