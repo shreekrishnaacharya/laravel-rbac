@@ -30,6 +30,11 @@ class SkRbacServiceProvider extends ServiceProvider
             __DIR__ . '/views'  => base_path('resources/views/vendor/laravel-rbac'),
         ], 'skrbac_view');
 
+        $this->publishes([
+            __DIR__ . '/config/skrbac.php' => base_path('config/skrbac.php'),
+            __DIR__ . '/../public' => public_path('vendor/laravel-rbac')
+        ], 'laravel-assets');
+
         Route::group(['middleware' => ['web']], function () {
             \Skacharya\LaravelRbac\SkRbac::routes();
         });
