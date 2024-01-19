@@ -45,7 +45,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 
    Open file skrbac.php inside config folder change and the configuration as per your need.
 
-   - **user_modal:**  Define your user model classname that you will use for authentication. example `'user_model'=>App\Models\User::class`
+   - **user_model:**  Define your user model classname that you will use for authentication. example `'user_model'=>App\Models\User::class`
    - **groups:** Add all route group name that needs to be included for rbac. example all route group name starting with `admin.` will be added into rbac route list
    - **routes:** Add complete name of route that you want to be included into rbac route list. Mostly the route that doesnot fall under group defined above option.
    - **except_routes:** Add complete name of route that you want do not want to be included into rbac. Sometime there could be some route inside group that you do not want to include in rbac
