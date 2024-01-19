@@ -18,7 +18,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
 1. Install via Composer:
 
     ```bash
-   composer require your-vendor-name/your-package-name
+   composer require skacharya/laravel-rbac
 
 2. Publish configuration (if required):
 
