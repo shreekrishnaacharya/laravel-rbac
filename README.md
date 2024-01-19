@@ -119,8 +119,10 @@ Your custom blade file mycustomrbac.blade.php
 @endpush
 ```
 Github:
+
 Want to explor the code for free.
-We appricate your star and fork on github :
+
+We appreciate your star and fork on github :
 https://github.com/shreekrishnaacharya/laravel-rbac
 
 Contributing:
