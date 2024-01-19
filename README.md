@@ -95,14 +95,7 @@ Empower your Laravel applications with dynamic, real-time, and user-friendly rol
     ```
     Here 'admin.' is the group name.
 
-6. When ever you make any new changes to your route list. Always run following command.
-
-    ```bash
-   php artisan route:store
-    ```
-   This command will update rbac list.
-
-7. You can use `\Skacharya\LaravelRbac\SkAccess` class to check if given route is accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else in other all case it return true
+6. You can use `\Skacharya\LaravelRbac\SkAccess` class to check if given route is accessable to the current login user or not. For that you can use its static method hasAccess. You can dynamically keep or remove certain route button or a tag depending on the current access of user to that route. This method will return false if user is loggedin and has no access to route else in other all case it return true
 
     Example :
     ```bash
